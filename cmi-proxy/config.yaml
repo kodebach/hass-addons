@@ -23,7 +23,5 @@ image: "ghcr.io/kodebach/{arch}-addon-cmi-proxy"
 panel_icon: "mdi:heating-coil"
 panel_title: "TA CMI"
 panel_admin: false
-webui: "http://[HOST]:[PORT:8555]/"
-watchdog: "http://[HOST]:[PORT:8555]/"
 ingress: true
 ingress_port: 8555
