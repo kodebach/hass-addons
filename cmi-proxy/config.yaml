@@ -24,4 +24,5 @@ panel_icon: "mdi:heating-coil"
 panel_title: "TA CMI"
 panel_admin: false
 ingress: true
+ingress_entry: /schema.html#1
 ingress_port: 8555
