@@ -10,10 +10,20 @@ arch:
   - amd64
   - i386
 init: false
-map:
-  - share:rw
+map: []
 options:
-  message: "Hello world..."
+  cmi: ""
+  user: ""
+  password: ""
 schema:
-  message: "str?"
+  cmi: str
+  user: str
+  password: password
 image: "ghcr.io/kodebach/{arch}-addon-cmi-proxy"
+panel_icon: "mdi:heating-coil"
+panel_title: "TA CMI"
+panel_admin: false
+webui: "http://[HOST]:[PORT:8555]/"
+watchdog: "http://[HOST]:[PORT:8555]/"
+ingress: true
+ingress_port: 8555

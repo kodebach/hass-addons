@@ -1,4 +1,10 @@
 configuration:
-  message:
-    name: Message
-    description: The message that will be printed to the log when starting this add-on.
+  cmi:
+    name: CMI Address
+    description: IP Address (or hostname) of the CMI e.g. 127.0.0.1
+  user:
+    name: Username
+    description: Username for CMI authentication
+  password:
+    name: password
+    description: Password for CMI authentication

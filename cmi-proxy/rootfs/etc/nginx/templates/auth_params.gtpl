@@ -1,0 +1,1 @@
+proxy_set_header Authorization "{{ printf "Basic %s" (b64enc (printf "%s:%s" .user .password))}}";
