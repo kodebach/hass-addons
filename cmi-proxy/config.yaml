@@ -1,0 +1,19 @@
+name: TA CMI Proxy
+version: "0.0.1"
+slug: cmi-proxy
+description: TA CMI Proxy
+url: "https://github.com/kodebach/hass-addons/tree/main/cmi-proxy"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+options:
+  message: "Hello world..."
+schema:
+  message: "str?"
+image: "ghcr.io/kodebach/{arch}-addon-cmi-proxy"
