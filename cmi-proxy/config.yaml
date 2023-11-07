@@ -1,5 +1,5 @@
 name: TA CMI Proxy
-version: "0.0.2"
+version: "0.0.3"
 slug: cmi-proxy
 description: TA CMI Proxy
 url: "https://github.com/kodebach/hass-addons/tree/main/cmi-proxy"

@@ -1,3 +1,7 @@
+## 0.0.3
+
+- Fix change.cgi Referer
+
 ## 0.0.2
 
 - Initial release (fixed)
