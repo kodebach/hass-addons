@@ -36,7 +36,7 @@ jobs:
       - name: Filter changed apps
         id: filter
         env:
-          APPS: ${{ steps.apps.outputs.apps }}
+          APPS: ${{ steps.apps.outputs.addons }}
           CHANGED_FILES: ${{ steps.changed_files.outputs.all_changed_files }}
         run: |
           changed_apps=()
