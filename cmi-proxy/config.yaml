@@ -4,11 +4,8 @@ slug: cmi-proxy
 description: TA CMI Proxy
 url: "https://github.com/kodebach/hass-addons/tree/main/cmi-proxy"
 arch:
-  - armhf
-  - armv7
   - aarch64
   - amd64
-  - i386
 init: false
 options:
   cmi: ""
