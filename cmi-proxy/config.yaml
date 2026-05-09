@@ -1,5 +1,5 @@
 name: TA CMI Proxy
-version: "0.0.8"
+version: "0.0.9"
 slug: cmi-proxy
 description: TA CMI Proxy
 url: "https://github.com/kodebach/hass-addons/tree/main/cmi-proxy"
@@ -15,7 +15,7 @@ schema:
   cmi: str
   user: str
   password: password
-image: "ghcr.io/kodebach/{arch}-addon-cmi-proxy"
+image: "ghcr.io/kodebach/addon-cmi-proxy"
 panel_icon: "mdi:heating-coil"
 panel_title: "TA CMI"
 panel_admin: false
