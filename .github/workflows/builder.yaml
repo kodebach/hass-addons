@@ -4,10 +4,10 @@ env:
   MONITORED_FILES: "config.json config.yaml config.yml Dockerfile rootfs"
 
 on:
-  push:
+  pull_request:
     branches:
       - main
-  pull_request:
+  push:
     branches:
       - main
 
@@ -16,8 +16,8 @@ permissions:
 
 jobs:
   init:
-    runs-on: ubuntu-latest
     name: Initialize builds
+    runs-on: ubuntu-latest
     outputs:
       changed: ${{ steps.filter.outputs.changed }}
       changed_apps: ${{ steps.filter.outputs.changed_apps }}
