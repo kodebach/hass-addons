@@ -1,3 +1,7 @@
+## 0.0.7
+
+- Fix Referer
+
 ## 0.0.3
 
 - Fix change.cgi Referer
