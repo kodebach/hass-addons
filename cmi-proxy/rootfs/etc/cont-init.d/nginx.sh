@@ -12,7 +12,7 @@ password=$(bashio::config 'password')
 
 bashio::var.json \
     entry "$(bashio::addon.ingress_entry)" \
-    server "$cmi"
+    server "$cmi" \
     | tempio \
         -template /etc/nginx/templates/ingress.gtpl \
         -out /etc/nginx/servers/ingress.conf
@@ -26,7 +26,7 @@ bashio::var.json \
 bashio::var.json \
     server "$cmi" \
     user "$user" \
-    password "$password"
+    password "$password" \
     | tempio \
         -template /etc/nginx/templates/auth_params.gtpl \
         -out /etc/nginx/includes/auth_params.conf
