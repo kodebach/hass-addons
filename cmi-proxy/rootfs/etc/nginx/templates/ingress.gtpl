@@ -9,6 +9,7 @@ server {
 
         proxy_pass http://backend/;
         proxy_set_header X-Ingress-Path {{ .entry }};
+        proxy_set_header Referer "http://{{ .server }}/";
         include /etc/nginx/includes/proxy_params.conf;
         include /etc/nginx/includes/auth_params.conf;
     }
